@@ -1,0 +1,12 @@
+# alguritemo mesas disponiveis
+mesas=10
+lugares=mesas*5
+for mesas_ocupadas in range(mesas):
+    nr_clientes=int(input("quantas pessoas para entrar:"))
+    if nr_clientes>lugares:
+        print("não tem lugares desponiveis")
+        break
+    mesas=mesas-1
+    lugares=lugares-nr_clientes
+    print("mesas ocupadas", mesas_ocupadas+1)
+    print("lugares desponiveis", lugares)
